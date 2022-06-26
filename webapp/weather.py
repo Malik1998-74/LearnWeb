@@ -5,7 +5,7 @@ from flask import current_app
 import requests   # импортируем библдиотеку (запрос)
 
 def weather_by_city(city_name): # создаем функция которая принимает название города
-    weather_url = current_app.config['WEATHER_URL'] #добовляем сайт (базу) где будем брать данные
+    weather_url = current_app.config['WEATHER_URL'] #добовляем сайт (базу) где будем брать данные вместо юрл сделали current_aoo.config['WEATHER_URL']
     params = {
         'key': current_app.config['WEATHER_API_KEY'],
         'q': city_name,
